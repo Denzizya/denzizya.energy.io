@@ -133,7 +133,7 @@ class FormEnergyOff
         let all_address = '', i=0;
         for(let street in data)
         {
-            all_address += `<div class="street-link" onClick="form.view('${data[street][0][0]}')">${street}</div><div id="${data[street][0][0]}" style="display: none;">`;
+            all_address += `<div class="street-link" onClick="form.view('${data[street][0][0]}')">${street}<div class="triangle"></div></div><div id="${data[street][0][0]}" style="display: none;">`;
             for(let address in data[street])
             {
                 all_address += `<div class="pretty p-svg p-curve" style="display: block; margin: 1em;">
